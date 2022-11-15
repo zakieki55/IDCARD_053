@@ -10,6 +10,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Kartu Tanda Penduduk</h1>
+        <hr>
+        <form action="/kirimData" method="POST" enctype="multipart/form-data">
+            Nama            :<input type="text" name="mytext"/>
+            <br><br>
+            Tanggal Lahir   :<input type="date" name="myDate"/>
+           <br><br>
+            Alamat          :<input type="text" name="myaddress"/>
+           <br><br>
+            Foto            :<input type="file" name="myImage"/>
+           <br><br>
+           <input type="submit"name="send"/>
+        <form/>
     </body>
 </html>

@@ -23,7 +23,6 @@ import org.springframework.web.multipart.MultipartFile;
 @Controller
 public class myController {
     @RequestMapping("/kirimData")
-    @ResponseBody
     public String getData(@RequestParam("myName") String name,
                           @RequestParam("myImage") MultipartFile image,
                           @RequestParam("myaddress") String address,
